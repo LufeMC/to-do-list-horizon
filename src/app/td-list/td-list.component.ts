@@ -45,13 +45,13 @@ export class TdListComponent implements OnInit {
 
       this.todos_var.splice(todo.id-1, 1);
       
-      if (todo.id !== this.todos_var.length-1) {
-        for (const item of this.todos_var) {
-          if (item.id > todo.id) {
-            item.id--;
-          }
-        }
-      }
+      // if (todo.id !== this.todos_var.length-1) {
+      //   for (const item of this.todos_var) {
+      //     if (item.id > todo.id) {
+      //       item.id--;
+      //     }
+      //   }
+      // }
       
       for (const item of this.todos_var) {
         if (item.id > todo.id) {
