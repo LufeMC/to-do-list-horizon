@@ -54,12 +54,6 @@ export class TdListComponent implements OnInit {
           }
         }
       }
-      
-      for (const item of this.todos_var) {
-        if (item.id > todo.id) {
-          item.id--;
-        }
-      }
 
       this.JSONPlaceholder.getAllData().subscribe((data) => {
         for (const item of data) {
