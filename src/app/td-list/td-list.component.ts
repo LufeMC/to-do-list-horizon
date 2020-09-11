@@ -63,7 +63,6 @@ export class TdListComponent implements OnInit {
 
       this.JSONPlaceholder.getAllData().subscribe((data) => {
         for (const item of data) {
-          console.log(item)
           if (item.id > value) {
             const new_to_do = new Todo((item.id-1), item.title, item._id, item.time, item.completed, item.link);
             console.log(new_to_do)
