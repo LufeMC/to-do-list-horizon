@@ -9,8 +9,6 @@ import { AppComponent } from './app.component';
 import { TdListComponent } from './td-list/td-list.component';
 import { ButtonSubmitComponent } from './button-submit/button-submit.component';
 import { ItemComponent } from './td-list/item/item.component'
-
-import { ItemService } from './shared/item.service';
 import { ItemAddComponent } from './button-submit/item-add/item-add.component';
 
 

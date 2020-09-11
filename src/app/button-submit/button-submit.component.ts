@@ -21,6 +21,7 @@ export class ButtonSubmitComponent implements OnInit {
     this.todos = new Array<any>();
   }
 
+//GETTING ALL TODOS FROM DATABASE
   getDataFromDB() {
     this.JSONPlaceholder.getAllData().subscribe((data) => {
       console.log(data);
