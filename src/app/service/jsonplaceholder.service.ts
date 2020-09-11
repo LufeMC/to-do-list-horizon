@@ -10,7 +10,7 @@ export class JSONPlaceholderService {
 	url:string;
 
   constructor(private http:HttpClient) {
-  	this.url = "http://localhost:3446/todos/";
+  	this.url = "https://todo-list-luis.herokuapp.com/todos/";
   }
 
   getAllData():Observable<any> {
