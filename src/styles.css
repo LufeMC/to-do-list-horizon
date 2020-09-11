@@ -1,0 +1,118 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "https://fonts.googleapis.com/css2?family=Grandstander:wght@500&family=Roboto+Condensed&display=swap";
+
+body {
+	background-color: #4abdac;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.ItemDialog .mat-dialog-container {
+	border-radius: 10px;
+}
+
+.ItemDialog .mat-dialog-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5em;
+}
+
+.ItemDialog .mat-dialog-content ul {
+	list-style: none;
+}
+
+.ItemDialog .mat-dialog-content ul li input {
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #DFDCE3;
+}
+
+.ItemDialog .mat-dialog-content ul li input::placeholder {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.ItemDialog .mat-dialog-content ul .text {
+	width: 50%;
+	padding: 1% .5%;
+	margin-bottom: 1.5vh;
+	border-radius: 7px;
+}
+
+.ItemDialog .mat-dialog-content ul .time {
+	width: 25%;
+	padding: 1% .5%;
+	margin-bottom: 1.5vh;
+	border-radius: 7px;
+}
+
+.ItemDialog .mat-dialog-content ul .link {
+	width: 80%;
+	padding: 1% .5%;
+	margin-bottom: 1.5vh;
+	border-radius: 7px;
+}
+
+.ItemDialog .mat-dialog-actions {
+	display: flex;
+	justify-content: space-around;
+}
+
+.ItemDialog .mat-raised-button {
+	border: none;
+	color: white;
+	padding: 1vh 2vh;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 1.2em;
+	margin-bottom: 2vh;
+	border-radius: 5px;
+}
+
+.ItemDialog .close {
+	background-color: red;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.ItemDialog .close:hover {
+	background-color: #990000;
+	font-family: 'Roboto Condensed', sans-serif;
+	cursor: pointer;
+}
+
+.ItemDialog .add {
+	background-color: green;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.ItemDialog .add:hover {
+	background-color: #004C00;
+	font-family: 'Roboto Condensed', sans-serif;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 415px) {
+	.ItemDialog .mat-dialog-content ul .text {
+		width: 100%;
+		padding: 1% .5%;
+		margin-bottom: 1.5vh;
+		border-radius: 7px;
+	}
+
+	.ItemDialog .mat-dialog-content ul .time {
+		width: 100%;
+		padding: 1% .5%;
+		margin-bottom: 1.5vh;
+		border-radius: 7px;
+	}
+
+	.ItemDialog .mat-dialog-content ul .link {
+		width: 100%;
+		padding: 1% .5%;
+		margin-bottom: 1.5vh;
+		border-radius: 7px;
+	}
+
+	.ItemDialog .mat-dialog-content ul {
+		list-style: none;
+		padding: 0;
+	}
+}

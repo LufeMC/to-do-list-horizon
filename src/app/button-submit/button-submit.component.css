@@ -1,0 +1,31 @@
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.container .button_section {
+	padding-top: 2vh;
+}
+
+.container .button_section .save {
+	padding: 1.3vh 3vh;
+	font-size: 1.2em;
+	border-radius: 6px;
+	border-width: 0; 
+	background-color: #f7B733;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container .button_section .save:hover {
+	padding: 1.3vh 3vh;
+	font-size: 1.2em;
+	border-radius: 6px;
+	border-width: 0; 
+	background-color: #805e19;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}

@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>Adicionar To-Do</h2>
+
+<mat-dialog-content>
+	<div class = "container">
+		<ul>
+			<li>
+				<input class = "text" type="text" [(ngModel)] = "item" placeholder="Nome do Item *" (keydown.esc)="close()" (keyup.enter)="add()" maxlength="23">
+			</li>
+			<li>
+				<input class = "time" type="time" [(ngModel)] = "time" (keydown.esc)="close()" (keyup.enter)="add()">
+			</li>
+			<li>
+				<input class = "link" type="text" [(ngModel)] = "link" placeholder="Link da Imagem" (keydown.esc)="close()" (keyup.enter)="add()">
+			</li>
+		</ul>
+
+		* Requerido
+	</div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button close" (click)="close()">Fechar</button>
+    <button class="mat-raised-button add" (click)="add()">Confirmar</button>
+</mat-dialog-actions>

@@ -1,0 +1,13 @@
+<ul class="todos">
+	<li *ngFor="let todo of todos_var">
+		<span class="badge">{{todo.id}}</span>
+		<span class="item"><p>{{todo.title}}</p></span>
+		<div class = "image"><img src="{{todo.link}}"></div>
+		<div class = "details">
+			<span class="time">{{todo.time}}</span>
+			<span class="checkbox"><input type="checkbox" (change)="checkValue($event, todo)" [checked]="todo.completed" /></span>
+			<span class="trash_bin"><img src="assets/img/recycle_bin.png" (click)="deleteItem(todo)"></span>
+			<span class="edit"><img src="assets/img/edit.png" (click)="editItem(todo)"></span>
+		</div>
+	</li>
+</ul>

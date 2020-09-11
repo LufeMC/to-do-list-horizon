@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>Editar To-Do</h2>
+
+<mat-dialog-content>
+	<div class = "container">
+		<ul>
+			<li>
+				<input class = "text" type="text" [(ngModel)]="item" (keyup.enter)="editar()" (keydown.esc)="cancelar()" placeholder="Nome do Item *" maxlength="23">
+			</li>
+			<li>
+				<input class = "time" ng-app ng-controller = "Crtl" type="time" [(ngModel)]="time" (keyup.enter)="editar()" (keydown.esc)="cancelar()">
+			</li>
+			<li>
+				<input class = "link" type="text" [(ngModel)] = "link" placeholder="Link da Imagem" (keydown.esc)="cancelar()" (keyup.enter)="editar()">
+			</li>
+		</ul>
+
+		* Requerido
+	</div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button close" (click)="cancelar()">Fechar</button>
+    <button class="mat-raised-button add" (click)="editar()">Confirmar</button>
+</mat-dialog-actions>
